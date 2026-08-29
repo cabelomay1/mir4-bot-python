@@ -1,0 +1,335 @@
+================================================================================
+                    🎮 MIR4 BOT - GUIA DE USO COMPLETO 🎮
+                          Versão 1.0.0 - 2026
+================================================================================
+
+📋 ÍNDICE
+================================================================================
+1. Requisitos do Sistema
+2. Instalação (Primeiro uso)
+3. Como Usar o Bot
+4. Configurações
+5. Troubleshooting (Problemas)
+6. Aviso Legal
+
+
+================================================================================
+1️⃣  REQUISITOS DO SISTEMA
+================================================================================
+
+Você precisa ter:
+✓ Windows 10 ou Windows 11
+✓ MIR4 instalado e funcionando
+✓ Conexão com a internet (para instalar dependências)
+✓ Espaço em disco: mínimo 500MB
+
+Não precisa saber programação! O bot faz tudo automaticamente.
+
+
+================================================================================
+2️⃣  INSTALAÇÃO (PRIMEIRO USO)
+================================================================================
+
+PASSO 1: Baixar o Repositório
+----------------------------------
+1. Acesse: https://github.com/cabelomay1/mir4-bot-python
+2. Clique em "Code" (botão verde)
+3. Clique em "Download ZIP"
+4. Extraia a pasta em um local seguro (ex: Desktop ou C:\Projetos)
+
+PASSO 2: Instalar Python (SE NÃO TIVER)
+----------------------------------
+1. Acesse: https://www.python.org/downloads/
+2. Baixe a versão mais recente (Python 3.10 ou superior)
+3. Execute o instalador
+4. ⚠️  IMPORTANTE: MARQUE "Add Python to PATH"
+5. Clique em "Install Now"
+6. Aguarde a instalação terminar
+
+PASSO 3: Executar o Instalador
+----------------------------------
+1. Abra a pasta do bot que você extraiu
+2. Procure o arquivo: "instalar_e_executar.bat"
+3. CLIQUE 2X neste arquivo
+4. Uma janela preta vai abrir
+5. Aguarde enquanto o programa:
+   - Verifica Python
+   - Cria pastas necessárias
+   - Instala bibliotecas (pode levar 5-10 minutos)
+   - Inicia o bot automaticamente
+
+✓ Pronto! O bot iniciará automaticamente!
+
+
+================================================================================
+3️⃣  COMO USAR O BOT
+================================================================================
+
+PRIMEIRA EXECUÇÃO
+----------------------------------
+1. Certifique-se de que o MIR4 está ABERTO
+2. Clique no arquivo: "instalar_e_executar.bat" (na pasta do bot)
+3. Deixe o arquivo rodando até ele pedir para você fazer algo
+
+PRÓXIMAS EXECUÇÕES (Mais rápido)
+----------------------------------
+1. Abra a pasta do bot
+2. Clique 2X em: "executar.bat"
+3. Aguarde 3 segundos
+4. O bot começará automaticamente
+
+DURANTE A EXECUÇÃO
+----------------------------------
+✓ Uma janela preta (terminal) ficará aberta mostrando o que o bot está fazendo
+✓ Você verá mensagens como:
+  - [✓] Missão principal detectada! Clicando...
+  - [✓] Missões completadas: 1
+  - etc
+
+CONTROLES
+----------------------------------
+🛑 PARAR O BOT: Pressione ESC no teclado
+⏸️  PAUSAR: (Não há pausa, mas você pode fechar a janela)
+▶️  RETOMAR: Execute "executar.bat" novamente
+
+
+================================================================================
+4️⃣  CONFIGURAÇÕES
+================================================================================
+
+O bot tem um arquivo chamado "config.json" que você pode personalizar.
+
+COMO MODIFICAR:
+1. Abra a pasta do bot
+2. Procure por: "config.json"
+3. Clique com botão direito e escolha "Abrir com... Bloco de Notas"
+4. Modifique os valores conforme desejado
+5. Salve (Ctrl+S)
+6. Execute o bot novamente
+
+OPÇÕES DISPONÍVEIS:
+----------------------------------
+
+"velocidade_clique": 0.5
+  → Quanto mais ALTO, mais LENTO é o clique (em segundos)
+  → Padrão: 0.5 (recomendado)
+  → Valores: 0.1 a 2.0
+
+"intervalo_verificacao": 2
+  → Quanto tempo esperar antes de procurar novo botão (em segundos)
+  → Padrão: 2 (recomendado)
+  → Valores: 1 a 10
+
+"modo_debug": true
+  → Se TRUE: Bot salva capturas de tela para debug
+  → Se FALSE: Bot roda mais rápido
+  → Padrão: true
+  → Valores: true ou false
+
+"tempo_maximo_missao": 300
+  → Tempo máximo para completar uma missão (em segundos)
+  → Padrão: 300 (5 minutos)
+  → Valores: 60 a 600
+
+"delay_entre_missoes": 5
+  → Tempo de espera entre uma missão e outra (em segundos)
+  → Padrão: 5 (recomendado)
+  → Valores: 1 a 30
+
+"numero_missoes_antes_pausa": 10
+  → Quantas missões completar antes de fazer uma pausa
+  → Padrão: 10
+  → Valores: 5 a 100
+
+"tempo_pausa_minutos": 5
+  → Quanto tempo pausar depois de N missões (em minutos)
+  → Padrão: 5
+  → Valores: 1 a 60
+
+
+EXEMPLO DE CONFIGURAÇÃO RÁPIDA:
+----------------------------------
+{
+  "velocidade_clique": 0.3,
+  "intervalo_verificacao": 1,
+  "modo_debug": false,
+  "tempo_maximo_missao": 300,
+  "delay_entre_missoes": 2,
+  "numero_missoes_antes_pausa": 20,
+  "tempo_pausa_minutos": 10
+}
+
+
+================================================================================
+5️⃣  TROUBLESHOOTING (RESOLVENDO PROBLEMAS)
+================================================================================
+
+PROBLEMA 1: "Python não está instalado"
+----------------------------------
+Solução:
+1. Acesse: https://www.python.org/downloads/
+2. Baixe e instale Python 3.10+
+3. ⚠️  IMPORTANTE: Marque "Add Python to PATH"
+4. Reinicie o computador
+5. Tente novamente
+
+
+PROBLEMA 2: "Arquivo requirements.txt não encontrado"
+----------------------------------
+Solução:
+1. Certifique-se de que extraiu TODA a pasta do bot
+2. Não extraia apenas alguns arquivos
+3. Baixe novamente se necessário
+
+
+PROBLEMA 3: O bot não detecta os botões
+----------------------------------
+Possíveis causas:
+✓ Resolução da tela diferente (tente 1920x1080)
+✓ Interface do jogo modificada
+✓ Bot procurando no lugar errado
+
+Soluções:
+1. Verifique a resolução: Clique direito na tela → Configurações de tela
+2. Aumente o valor de "intervalo_verificacao" em config.json
+3. Reduza o valor de "velocidade_clique"
+4. Se o modo_debug estiver TRUE, verifique a pasta "screenshots/"
+
+
+PROBLEMA 4: O bot é muito lento
+----------------------------------
+Soluções:
+1. Reduza o valor de "intervalo_verificacao" em config.json
+2. Reduza o valor de "velocidade_clique"
+3. Aumente o valor de "delay_entre_missoes"
+4. Mude "modo_debug" para false
+
+
+PROBLEMA 5: O computador trava/fica lento
+----------------------------------
+Soluções:
+1. Aumente o valor de "delay_entre_missoes"
+2. Aumente o valor de "intervalo_verificacao"
+3. Ative "modo_debug": false (para não salvar screenshots)
+4. Feche outros programas que usam muita RAM
+
+
+PROBLEMA 6: "Access Denied" ou erro de permissão
+----------------------------------
+Solução:
+1. Clique com botão DIREITO em "instalar_e_executar.bat"
+2. Escolha "Executar como administrador"
+
+
+PROBLEMA 7: Erro na hora de instalar dependências
+----------------------------------
+Solução:
+1. Abra o Prompt de Comando (Windows + R, digitar "cmd")
+2. Digite: pip install --upgrade pip
+3. Aguarde terminar
+4. Digite: pip install -r requirements.txt
+5. Tente executar o bot novamente
+
+
+================================================================================
+6️⃣  AVISO LEGAL ⚠️
+================================================================================
+
+🔴 IMPORTANTE - LEIA COM ATENÇÃO 🔴
+
+Este bot é fornecido APENAS PARA FINS EDUCACIONAIS.
+
+✓ O uso de bots pode violar os Termos de Serviço do MIR4
+✓ Você pode ser BANIDO da sua conta
+✓ O desenvolvedor NÃO se responsabiliza por perdas de conta ou dados
+✓ Use por sua conta e risco
+
+RECOMENDAÇÕES:
+1. Teste em uma conta secundária primeiro
+2. Não deixe o bot rodando 24/7
+3. Use pausas frequentes (configure em config.json)
+4. Monitore o bot enquanto está rodando
+5. Tenha cuidado ao usar em horários movimentados
+
+
+================================================================================
+7️⃣  PRÓXIMOS PASSOS
+================================================================================
+
+Agora que você instalou o bot:
+
+1. Personalize as configurações em "config.json"
+2. Abra o MIR4
+3. Execute "executar.bat" ou "instalar_e_executar.bat"
+4. Observe o bot funcionando
+5. Ajuste as configurações conforme necessário
+
+
+📚 PARA APRENDER MAIS:
+- GitHub: https://github.com/cabelomay1/mir4-bot-python
+- Python: https://www.python.org/
+- Discord: Procure por comunidades de MIR4
+
+
+================================================================================
+8️⃣  FAQ (PERGUNTAS FREQUENTES)
+================================================================================
+
+P: Posso usar o bot em qualquer resolução de tela?
+R: Sim, mas recomenda-se 1920x1080 para melhor detecção.
+
+P: O bot funciona em Mac ou Linux?
+R: Atualmente não. Está otimizado para Windows.
+
+P: Posso usar o bot em múltiplas contas?
+R: Sim, mas execute uma de cada vez.
+
+P: O bot detecta automaticamente a missão?
+R: Sim! Ele procura pelos botões automaticamente.
+
+P: Preciso ficar de olho no bot?
+R: Recomenda-se monitorar, especialmente no primeiro uso.
+
+P: Quanto tempo leva para completar uma missão?
+R: Depende da configuração e do seu PC. Tipicamente 5-30 segundos.
+
+P: Posso modificar o código?
+R: Sim! O projeto é open-source. Faça fork no GitHub.
+
+P: Onde estão os logs do bot?
+R: Na pasta "logs/" (cria automaticamente).
+
+P: Como desinstalar o bot?
+R: Simplesmente delete a pasta. Nenhuma instalação no sistema.
+
+P: O bot usa muita internet?
+R: Não. Usa muito pouca depois de instalado.
+
+
+================================================================================
+📞 SUPORTE
+================================================================================
+
+Se tiver problemas:
+
+1. Verifique este guia primeiro
+2. Veja se há erros na janela do terminal
+3. Procure em: https://github.com/cabelomay1/mir4-bot-python/issues
+4. Crie uma nova issue com detalhes do erro
+
+
+================================================================================
+✅ TUDO PRONTO!
+================================================================================
+
+Você está pronto para começar!
+
+Execute: instalar_e_executar.bat (primeira vez)
+Depois: executar.bat (próximas vezes)
+
+Boa sorte! 🎮
+
+================================================================================
+Desenvolvido por: @cabelomay1
+Última atualização: 29/08/2026
+================================================================================
