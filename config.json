@@ -1,0 +1,12 @@
+{
+  "velocidade_clique": 0.5,
+  "intervalo_verificacao": 2,
+  "modo_debug": true,
+  "tempo_maximo_missao": 300,
+  "resolucao_tela": "1920x1080",
+  "nome_janela_jogo": "MIR4",
+  "ativar_em_startup": false,
+  "delay_entre_missoes": 5,
+  "numero_missoes_antes_pausa": 10,
+  "tempo_pausa_minutos": 5
+}

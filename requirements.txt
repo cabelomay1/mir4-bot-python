@@ -1,0 +1,21 @@
+# Dependências do MIR4 Bot
+
+# Automação de tela e mouse
+pyautogui==0.9.53
+pyperclip==1.8.2
+
+# Processamento de imagem e OCR
+opencv-python==4.8.0.74
+pillow==10.0.0
+pytesseract==0.3.10
+
+# Detecção de janelas
+pygetwindow==0.0.9
+pywin32==305
+
+# Logging e configuração
+python-dotenv==1.0.0
+
+# Utilitários
+numpy==1.24.3
+requests==2.31.0
